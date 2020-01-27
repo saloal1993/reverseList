@@ -1,5 +1,4 @@
 #include <iostream>
-#include <string>
 
 using namespace std;
 
@@ -16,7 +15,7 @@ public:
                 next = new List(_data + 1, _length - 1);
         }
     }
-    List(T first, ...){
+    List(T first, ...){ //ToDo: not working
         T* elem = &first;
         while(*elem){
             cout << *elem << " ";
@@ -61,5 +60,4 @@ int main(){
     //auto rev_l = l.reverse();
     //rev_l.print();
     return 0;
-
 }
